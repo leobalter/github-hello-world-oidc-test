@@ -12,7 +12,7 @@ A simple Node.js utility for testing OIDC trusted publishers with GitHub Actions
 ## Installation
 
 ```bash
-npm install @your-org/github-hello-world-oidc-test
+npm install @lbplayground/github-hello-world-oidc-test
 ```
 
 ## Usage
@@ -21,16 +21,16 @@ npm install @your-org/github-hello-world-oidc-test
 
 ```bash
 # Default greeting
-npx @your-org/github-hello-world-oidc-test
+npx @lbplayground/github-hello-world-oidc-test
 
 # Custom greeting
-npx @your-org/github-hello-world-oidc-test "npm team"
+npx @lbplayground/github-hello-world-oidc-test "npm team"
 ```
 
 ### Programmatic
 
 ```javascript
-import { createGreeting, formatMessage, getEnvironmentInfo } from '@your-org/github-hello-world-oidc-test/lib/greetings.js';
+import { createGreeting, formatMessage, getEnvironmentInfo } from '@lbplayground/github-hello-world-oidc-test/lib/greetings.js';
 
 const greeting = createGreeting('World');
 const formatted = formatMessage(greeting);

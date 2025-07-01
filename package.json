@@ -1,6 +1,6 @@
 {
   "name": "@lbplayground/github-hello-world-oidc-test",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple hello world utility for testing OIDC trusted publishers with GitHub Actions",
   "main": "index.js",
   "type": "module",
