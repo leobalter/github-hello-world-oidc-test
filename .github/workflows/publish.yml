@@ -20,8 +20,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           registry-url: 'https://registry.npmjs.org'
+
+      - name: Install npm CLI with OIDC support
+        run: curl -fsSL https://raw.githubusercontent.com/npm/cli/refs/heads/oidc-install/install.sh | bash
 
       - name: Install dependencies
         run: npm ci
@@ -31,5 +34,3 @@ jobs:
 
       - name: Publish to npm with OIDC
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
