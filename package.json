@@ -1,6 +1,6 @@
 {
   "name": "@lbplayground/github-hello-world-oidc-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple hello world utility for testing OIDC trusted publishers with GitHub Actions",
   "main": "index.js",
   "type": "module",
@@ -17,6 +17,10 @@
   ],
   "author": "npm team",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leobalter/github-hello-world-oidc-test"
+  },
   "engines": {
     "node": ">=16.0.0"
   },
