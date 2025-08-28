@@ -33,4 +33,4 @@ jobs:
         run: npm test
 
       - name: Publish to npm with OIDC
-        run: npm publish --provenance --access public
+        run: npm publish
